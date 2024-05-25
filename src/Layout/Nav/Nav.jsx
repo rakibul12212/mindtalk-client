@@ -41,7 +41,7 @@ function App() {
 
           </button>
           {isMobileMenuOpen && (
-            <div className="absolute top-[60px] left-0 w-full bg-[#7AB2B2] ">
+            <div className="absolute top-[70px] left-0 w-full bg-[#7AB2B2] top-100 z-10">
               <div className="p-4">
                 <a href="#" className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md">Home</a>
                 <a href="#" className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md">About</a>
