@@ -9,17 +9,17 @@ import Button from '../../Component/ui/Button/Button';
 const Banner = () => {
     const slides = [
         {
-             imageUrl: '../../../public/banner.avif', 
+             imageUrl: 'https://i.ibb.co/d7Lk1s9/banner1.jpg', 
              heading: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
              text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae eaque saepe id distinctio! Nostrum.'
          },
         { 
-             imageUrl: '../../../public/banner1.avif',
+             imageUrl: 'https://i.ibb.co/6F85MZ0/banner.jpg',
              heading: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
              text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae eaque saepe id distinctio! Nostrum.' 
         },
         {
-              imageUrl: '../../../public/banner2.avif',
+              imageUrl: 'https://i.ibb.co/YtcRWKH/banner2.jpg',
               heading: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
               text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae eaque saepe id distinctio! Nostrum.' 
         },
