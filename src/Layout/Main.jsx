@@ -8,11 +8,13 @@ const Main = () => {
     return (
         
         <div>
-            <Nav />
-            <Container>
+            
+              <Nav />
+              <Container>
               <Outlet/>
-            </Container>
-            <Footer/>
+              </Container>
+              <Footer/>
+            
 
         </div>
         

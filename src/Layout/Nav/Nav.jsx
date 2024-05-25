@@ -9,7 +9,7 @@ function App() {
   };
   
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-[#4D869C] p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div>
@@ -22,9 +22,13 @@ function App() {
           <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md">Services</a>
           <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md">Contact</a>
         </div>
-        <div>
-          <Button text='submit'></Button>
+        {/* Button */}
+        <div  className="hidden md:block">
+        <Button text='signip' className='className="hidden md:block"'></Button>
+        <Button text='signup' className='className="hidden md:block"'></Button>
+
         </div>
+        
         {/* Dropdown for Mobile */}
         <div className="md:hidden ">
           <button onClick={toggleMobileMenu} className="text-white focus:outline-none">
@@ -34,13 +38,13 @@ function App() {
 
           </button>
           {isMobileMenuOpen && (
-            <div className="absolute top-100 left-0 w-full bg-gray-800 top-50">
+            <div className="absolute top-[60px] left-0 w-full bg-[#7AB2B2] ">
               <div className="p-4">
                 <a href="#" className="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">Home</a>
                 <a href="#" className="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">About</a>
                 <a href="#" className="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">Services</a>
                 <a href="#" className="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">Contact</a>
-                <Button text='submit'></Button>
+                <Button href='#' text='submit'></Button>
               </div>
             </div>
           )}
