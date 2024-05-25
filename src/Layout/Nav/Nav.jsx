@@ -1,42 +1,53 @@
-import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import React, { useState } from 'react';
+import Button from '../../Component/ui/Button/Button';
 
+function App() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-export default function App() {
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+  
   return (
-    <Navbar className='bg-slate-200'>
-      <NavbarBrand>
-        
-        {/* <p className="font-bold text-inherit">logo</p> */}
-        <img src="https://i.ibb.co/WfR37y2/logo.png" alt=""  className="rounded-full h-14 w-14 p-1"/>
-      </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
-    </Navbar>
+    <nav className="bg-gray-800 p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        {/* Logo */}
+        <div>
+          <a href="#" className="text-white text-xl font-bold">Logo</a>
+        </div>
+        {/* Links - Desktop */}
+        <div className="hidden md:block">
+          <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md">Home</a>
+          <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md">About</a>
+          <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md">Services</a>
+          <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md">Contact</a>
+        </div>
+        <div>
+          <Button text='submit'></Button>
+        </div>
+        {/* Dropdown for Mobile */}
+        <div className="md:hidden ">
+          <button onClick={toggleMobileMenu} className="text-white focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+          </button>
+          {isMobileMenuOpen && (
+            <div className="absolute top-100 left-0 w-full bg-gray-800 top-50">
+              <div className="p-4">
+                <a href="#" className="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">Home</a>
+                <a href="#" className="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">About</a>
+                <a href="#" className="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">Services</a>
+                <a href="#" className="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">Contact</a>
+                <Button text='submit'></Button>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </nav>
   );
 }
+
+export default App;
