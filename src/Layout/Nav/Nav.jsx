@@ -13,7 +13,7 @@ function App() {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href='#' className='flex items-center' >
-          <div><img src=".https://i.ibb.co/pndLmw9/logo.png" alt="" className='max-h-12'/></div>
+          <div><img src="https://i.ibb.co/pndLmw9/logo.png" alt="" className='max-h-12'/></div>
           <div>
            <p className='font-bold text-white'>MindTalk</p>
            <p className='font-thin text-xs text-white'>Your Mental Health matters</p>
