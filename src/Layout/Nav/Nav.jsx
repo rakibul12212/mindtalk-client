@@ -12,20 +12,24 @@ function App() {
     <nav className="bg-[#4D869C] p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div>
-          <a href="#" className="text-white text-xl font-bold">MindTalk</a>
-        </div>
+        <a href='#' className='flex items-center' >
+          <div><img src="../../../public/logo.png" alt="" className='max-h-12'/></div>
+          <div>
+           <p className='font-bold text-white'>MindTalk</p>
+           <p className='font-thin text-xs text-white'>Your Mental Health matters</p>
+          </div>
+        </a>
         {/* Links - Desktop */}
         <div className="hidden md:block">
-          <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md">Home</a>
-          <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md">About</a>
-          <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md">Services</a>
-          <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md">Contact</a>
+          <a href="#" className="text-white hover:border-b-2 px-3 py-2 rounded-md">Home</a>
+          <a href="#" className="text-white hover:border-b-2 px-3 py-2 rounded-md">About</a>
+          <a href="#" className="text-white hover:border-b-2 px-3 py-2 rounded-md">Services</a>
+          <a href="#" className="text-white hover:border-b-2 px-3 py-2 rounded-md">Contact</a>
         </div>
         {/* Button */}
         <div  className="hidden md:block  md:flex gap-2">
-          <Button text='signin' className='className="hidden md:block "' bgColor='bg-[#7AB2B2]'></Button>
-          <Button text='signup' className='className="hidden md:block"' bgColor='bg-[#7AB2B2]'></Button>
+          <Button text='signin' className='className="hidden md:block "' bgColor='bg-[#7AB2B2]' hoverColor='bg-[#4D869C]' ></Button>
+          <Button text='signup' className='className="hidden md:block"' bgColor='bg-[#7AB2B2]' hoverColor='bg-[#4D869C]'></Button>
         </div>
         
         {/* Dropdown for Mobile */}
