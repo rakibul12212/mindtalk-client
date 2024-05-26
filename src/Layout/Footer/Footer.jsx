@@ -23,7 +23,7 @@ const Footer = () => {
                    </div>
                </div>
 
-               <div className='p-1 '>
+               <div className='p-1 hidden md:block'>
                <p className='text-bold text-2xl py-1'>About</p>
                <p className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300 py-1"><a href="/" >About NFT</a></p>
                    <p className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300 py-1"><a href="/aboutus">Live Auctions</a></p>
@@ -31,7 +31,7 @@ const Footer = () => {
                    <p className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300 py-1"><a href="/addatoy">Activity</a></p>
                </div>
 
-               <div className='p-1 '>
+               <div className='p-1 hidden md:block'>
                <p className='text-bold text-2xl'>Support</p>
                <p className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300 py-1"><a href="/">Help & Support</a></p>
                    <p className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300 py-1"><a href="/">Item Details</a></p>
