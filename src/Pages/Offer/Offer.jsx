@@ -4,10 +4,10 @@ const Offer = () => {
     return (
         <div className="bg-[#f5f6f6] mt-20">
             <div>
-                <p className="flex justify-center text-4xl font-semibold md:font-bold md:text-6xl py-20 ">What We Offer</p>
+                <p className="flex justify-center text-4xl text-[#4D869C] font-semibold md:font-bold md:text-6xl py-20 ">What We Offer</p>
                 <div className="max-w-[900px] mx-auto">
   <div className="flex justify-center">
-    <div className="grid grid-cols-12 grid-rows-2 gap-x-8 px-8">
+    <div className="grid grid-cols-12 grid-rows-2 gap-x-8 gap-y-2 px-8">
       <div className="col-span-12 sm:col-span-4">
         <Card className="h-[300px]">
           <CardHeader className="absolute z-10 top-1 flex-col items-start">
