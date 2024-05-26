@@ -47,7 +47,9 @@ function App() {
                 <a href="#" className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md">About</a>
                 <a href="#" className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md">Services</a>
                 <a href="#" className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md">Contact</a>
-                <a href="#"><Button text='signin'  bgColor='bg-[#4D869C]' hoverColor='bg-[#7AB2B2]'></Button></a>
+                <a href="#" className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md">Sign In</a>
+                <a href="#" className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md">Sign Up</a>
+
                 
                 
               </div>

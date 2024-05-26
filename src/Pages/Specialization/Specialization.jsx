@@ -3,10 +3,10 @@ import React from 'react';
 const Specialization = () => {
     return (
         <div>
-            <div className="bg-gray-300">
+            <div >
                 <p className="flex justify-center items-center text-2xl md:text-6xl font-semibold md:font-bold  pb-10 md:pb-20 text-[#4D869C]">What we specialize in</p>
             </div>
-            <div className="flex flex-wrap justify-center">
+            <div className="flex flex-wrap justify-center items-center">
     <div className="flex flex-col justify-between bg-white border border-[#7AB2B2] rounded p-5 m-4 h-full w-full md:w-1/2 lg:w-1/4">
         <p className="font-bold py-3">Manual Therapy</p>
         <p className="text-sm pb-5">Share your product or service offering here. Give your prospective clients an overview of why they should use it. Differentiate it from the others listed on this page.</p>
