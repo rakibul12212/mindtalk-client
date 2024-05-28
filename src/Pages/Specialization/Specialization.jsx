@@ -2,7 +2,7 @@
 import React from 'react';
 const Specialization = () => {
     return (
-        <div>
+        <div className='pt-20'>
             <div >
                 <p className="flex justify-center items-center text-2xl md:text-6xl font-semibold md:font-bold  pb-10 md:pb-20 text-[#4D869C]">What we specialize in</p>
             </div>
