@@ -11,7 +11,7 @@ function App() {
   
   return (
     <nav className="bg-[#4D869C] p-4">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container  mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href='/' className='flex items-center' >
           <div><img src="https://i.ibb.co/pndLmw9/logo.png" alt="" className='max-h-12'/></div>
